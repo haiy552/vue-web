@@ -1,11 +1,11 @@
 <template>
     <div class="wapper">
-        <div class="goods">
+        <div class="brand">
             <div class="topTitle">
                 <span>品牌</span>
             </div>
             <div class="list">
-                <li v-for="item in list" :key="item.id" class="wow animated zoomIn" offset="20" >
+                <li v-for="item in list" :key="item.id" class="animated zoomIn"  >
                     <img :src="item.imgUrl" alt="仁和" title="仁和" />
                 </li>
             </div>
@@ -17,9 +17,8 @@
 </template>
 
 <script>
-import { WOW } from 'wow.js'
 export default {
-  name: 'goods',
+  name: 'brand',
   data(){
       return {
           list: [
@@ -39,13 +38,7 @@ export default {
     
   },
   mounted(){
-    var wow = new WOW({
-      boxClass: 'wow',
-      animateClass: 'animated',
-      offset: 0,
-      mobile: true
-    })
-    wow.init();
+  
   },
   computed: {
 
@@ -66,7 +59,7 @@ export default {
     @media screen and (max-width: 990px){
         .wapper{
             width: 100%;
-            .goods{
+            .brand{
                 margin: 0 auto;
                 width: 100%;
                 height: auto;
@@ -155,7 +148,7 @@ export default {
     @media screen and (min-width: 990px){
         .wapper{
             width: 100%;
-            .goods{
+            .brand{
                 margin: 0 auto;
                 width: 80%;
                 height: auto;
