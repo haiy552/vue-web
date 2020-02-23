@@ -6,6 +6,7 @@
     <v-brand></v-brand>
     <v-goods></v-goods>
     <v-show></v-show>
+    <v-medical></v-medical>
     <div class="box"></div>
   </div>
 </template>
@@ -17,6 +18,7 @@ import banner from '@/components/banner'
 import goods from '@/components/goods'
 import brand from './children/brand'
 import show from './children/show'
+import medical from './children/medical'
 export default {
   name: 'home',
   components: {
@@ -26,6 +28,7 @@ export default {
     'v-brand': brand,
     'v-goods' : goods,
     'v-show' : show,
+    'v-medical' : medical
   }
 }
 </script>

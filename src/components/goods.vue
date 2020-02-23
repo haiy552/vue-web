@@ -195,7 +195,6 @@ export default {
             width: 80%;
             margin: 0 auto;
             padding-bottom: 60px;
-            border-bottom: 1px dotted rgba(0,0,0,0.8);
             .list{
                 width: 100%;
                 display: flex;
@@ -213,6 +212,7 @@ export default {
                         .bg{
                             width: 100%;
                             height: 100%;
+                            overflow: hidden;
                             @include center;
                             &::before{
                                 content:'想要';
@@ -220,6 +220,7 @@ export default {
                                 text-align: center;
                                 line-height: 50px;
                                 color: $red;
+                                text-shadow: 1px 2px 2px 2px rgba(0,0,0,0.3);
                                 opacity: 0;
                                 width: 50px;
                                 height: 50px;
